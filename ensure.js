@@ -1,3 +1,8 @@
+//     Ensure.js 0.0.1
+//     http://anupbishnoi.github.com/ensure
+//     (c) 2012 Anup Bishnoi
+//     Ensure.js may be freely distributed under the MIT license.
+
 (function (root) {
     'use strict';
 
@@ -388,6 +393,8 @@
         stack = [];
         return true;
     };
+
+    ensure.VERSION = VERSION;
 
     // CommonJS module is defined
     if (typeof exports !== 'undefined') {
