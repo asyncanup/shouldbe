@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Ensure.js by anupbishnoi</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Ensure.js</h1>
+        <p>Type-checking for Javascript</p>
+
+        <p class="view"><a href="https://github.com/anupbishnoi/ensure">View the Project on GitHub <small>anupbishnoi/ensure</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/anupbishnoi/ensure/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/anupbishnoi/ensure/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/anupbishnoi/ensure">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <p><strong>Ensure.js</strong> is a type-checking utility for JavaScript written in pure
+Javascript that provides an easy api to check for a variable's value
+against a common set of types, with an ability to easily add more.</p>
+
+<pre><code>ensure("non_empty_string", str)
+ensure("date", dd, "It's not a date!")
+</code></pre>
+
+<p>Types can be simply checked for (<code>ensure.test</code>) or be made to throw
+errors in the case of a mismatch.</p>
+
+<p>It also provides a utility function (<code>ensure.match</code>) to check and match
+the arguments to a function against a set of provided type-arrays.</p>
+
+<p>This enables another utility that can work as a function call tracer
+and logger (<code>ensure.inside</code> and <code>ensure.stack</code>).</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/anupbishnoi">anupbishnoi</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-4830349-2");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
