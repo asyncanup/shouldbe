@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ensure.js Test Suite</title>
+  <link rel="stylesheet" href="vendor/jasmine.css" type="text/css" media="screen">
+  <script src="vendor/jasmine.js"></script>
+  <script src="vendor/jslitmus.js"></script>
+  <script src="../ensure.js"></script>
+
+  <script src="test.js"></script>
+  <script src="match.js"></script>
+  <script src="inside.js"></script>
+
+  <script type="text/javascript">
+    (function() {
+      var jasmineEnv = jasmine.getEnv();
+      jasmineEnv.updateInterval = 1000;
+
+      var htmlReporter = new jasmine.HtmlReporter();
+
+      jasmineEnv.addReporter(htmlReporter);
+
+      jasmineEnv.specFilter = function(spec) {
+        return htmlReporter.specFilter(spec);
+      };
+
+      var currentWindowOnload = window.onload;
+
+      window.onload = function() {
+        if (currentWindowOnload) {
+          currentWindowOnload();
+        }
+        execJasmine();
+      };
+
+      function execJasmine() {
+        jasmineEnv.execute();
+      }
+
+    })();
+  </script>
+</head>
+<body>
+</body>
+</html>
