@@ -1,10 +1,27 @@
 {
-  "name"          : "ensure",
-  "description"   : "JavaScript's type-checking utility.",
-  "homepage"      : "http://anupbishnoi.github.com/ensure",
-  "keywords"      : ["util", "types", "variable", "server", "client", "browser"],
-  "author"        : "Anup Bishnoi <anupbishnoi@gmail.com>",
-  "repository"    : {"type": "git", "url": "git://github.com/anupbishnoi/ensure.git"},
-  "main"          : "ensure.js",
-  "version"       : "0.0.1"
+  "name": "ensurejs",
+  "description": "JavaScript's type-checking utility.",
+  "homepage": "http://anupbishnoi.github.com/ensure",
+  "keywords": [
+    "util",
+    "types",
+    "variable",
+    "server",
+    "client",
+    "browser"
+  ],
+  "author": "Anup Bishnoi <anupbishnoi@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/anupbishnoi/ensure.git"
+  },
+  "main": "ensure.js",
+  "version": "0.0.1",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT"
 }

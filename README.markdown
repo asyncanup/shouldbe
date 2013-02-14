@@ -19,7 +19,7 @@ Types can be simply checked for (`ensure.test`) or be made to throw
 errors in the case of a mismatch.
 
 It also provides a utility function (`ensure.match`) to check and match
-the arguments to a function against a set of provided type-arrays.
+the arguments in a function against a set of provided type-arrays.
 
 This enables another utility that can work as a function call tracer
 and logger (`ensure.inside` and `ensure.stack`).
