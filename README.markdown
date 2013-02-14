@@ -23,3 +23,5 @@ the arguments in a function against a set of provided type-arrays.
 
 This enables another utility that can work as a function call tracer
 and logger (`ensure.inside` and `ensure.stack`).
+
+Dependencies: Underscore.

@@ -2,6 +2,8 @@
 //     http://anupbishnoi.github.com/ensure
 //     (c) 2012 Anup Bishnoi
 //     Ensure.js may be freely distributed under the MIT license.
+//
+//     Dependencies: [ "underscore" ]
 
 (function (root) {
     'use strict';
