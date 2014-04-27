@@ -1,1 +1,1 @@
-module.exports = require('./ensure');
+module.exports = require('./shouldbe');

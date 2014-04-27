@@ -1,3 +1,2 @@
-*.un~
-*.swp
-*.swo
+node_modules
+.elasticbeanstalk

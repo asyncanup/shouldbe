@@ -1,7 +1,11 @@
 {
-  "name": "ensurejs",
-  "description": "JavaScript's type-checking utility.",
-  "homepage": "http://anupbishnoi.github.com/ensure",
+  "name": "shouldbe",
+  "description": "Error-throwing type-checking for JavaScript",
+  "version": "1.0.0",
+  "author": {
+    "name": "Anup Bishnoi",
+    "email": "pixelsallover@gmail.com"
+  },
   "keywords": [
     "util",
     "types",
@@ -10,18 +14,17 @@
     "client",
     "browser"
   ],
-  "author": "Anup Bishnoi <anupbishnoi@gmail.com>",
+  "dependencies": {
+    "underscore": ">= 1.0.0"
+  },
   "repository": {
     "type": "git",
-    "url": "git://github.com/anupbishnoi/ensure.git"
+    "url": "git://github.com/anupbishnoi/shouldbe"
   },
-  "main": "ensure.js",
-  "version": "0.0.1",
-  "directories": {
-    "test": "test"
-  },
+  "main": "index",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublish": "npm prune",
+    "test": "mocha --recursive"
   },
   "license": "MIT"
 }
