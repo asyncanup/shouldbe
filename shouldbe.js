@@ -1,5 +1,4 @@
 (function () {
-    
     if (typeof _ === "undefined") {
         try {
             _ = require("underscore");
