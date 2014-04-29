@@ -46,5 +46,12 @@
     } else {
         window.shouldbe = shouldbe;
     }
+    
+    if (typeof define === "function") {
+        // TODO: find a way to put underscore explicitly as a dependency
+        define("shouldbe", [], function () {
+            return shouldbe;
+        });
+    }
 
 }());
