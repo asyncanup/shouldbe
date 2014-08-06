@@ -9,18 +9,25 @@
     }
     
     function shouldbe(typeStr) {
-        var type = _type(typeStr),
-            checker = _["is" + type],
-            rest = _.toArray(arguments).slice(1);
+        var rest = _.toArray(arguments).slice(1),
+            checker;
+
+        if (!rest.length) {
+            rest = [typeStr];
+            typeStr = "true";
+            checker = function (arg) { return !!arg; };
+        } else {
+            checker = _["is" + _type(typeStr)];
+        }
         
         if (!_.isFunction(checker)) {
             throw new Error("No known type for " + typeStr);
         }
-        
+
         if (true !== checker.apply(_, rest)) {
             throw new Error("Not " + typeStr + ": " + stringify(rest));
         }
-        
+
         return true;
     }
     
